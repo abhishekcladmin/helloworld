@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGINX Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+        .container {
+            padding: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    NGINX Configuration Test Page
+</header>
+
+<div class="container">
+    <p>This is a simple page to test if NGINX is configured properly.</p>
+    <button onclick="displayMessage()">Click me</button>
+    <p id="message"></p>
+</div>
+
+<script>
+    function displayMessage() {
+        document.getElementById('message').textContent = "NGINX is working correctly!";
+    }
+</script>
+
+</body>
+</html>
